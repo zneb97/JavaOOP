@@ -1,0 +1,38 @@
+//No Problem
+
+public static void main(String [] args) {
+ 	int x = 5;
+	while ( x > 1 ) {
+		x = x - 1;
+	 if ( x < 3) {
+		System.out.println(“small x”);
+	 }
+ }
+}
+
+//The problem with this one was that it would forever be stuck at x=1
+//Because there was nothing increasing it.
+
+class Exercise1b {
+ public static void main(String [] args) {
+ int x = 1;
+ while ( x < 10 ) {
+  x++; //ADDED THIS LINE TO FIX
+ if ( x > 3) {
+ System.out.println(“big x”);
+ }
+ }
+ }
+}
+
+//No problem 
+
+class Exercise1b {
+ int x = 5;
+ while ( x > 1 ) {
+ x = x - 1;
+ if ( x < 3) {
+ System.out.println(“small x”);
+ }
+ }
+}
