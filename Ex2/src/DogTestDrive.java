@@ -3,32 +3,32 @@ class DogTestDrive{
 		Dog[] dogs = new Dog[3];
 		
 		Dog d1 = new Dog();
-		d1.breed="Newfie";
-		d1.name="Tonka";
-		d1.size = 100;
+		d1.setBreed("Newfie");
+		d1.setName("Tonka");
+		d1.setSize(100);
 		dogs[0]=d1;
-		
+
 		Dog d2 = new Dog();
-		d2.breed="Husky";
-		d2.name="Tank";
-		d2.size=80;
+		d2.setBreed("Husky");
+		d2.setName("Tank");
+		d2.setSize(80);
 		dogs[1]=d2;
 		
 		Dog d3 = new Dog();
-		d3.breed="Mastiff";
-		d3.name="Troll";
-		d3.size=90;
+		d3.setBreed("Mastiff");
+		d3.setName("Troll");
+		d3.setSize(90);
 		dogs[2]=d3;
 		
 		int biggest = 0;
 		for(int i = 0; i < dogs.length; i++){
-			System.out.print(dogs[i].name + " says ");
+			System.out.print(dogs[i].getName() + " says ");
 			dogs[i].bark();
-			if(dogs[i].size > dogs[biggest].size){
+			if(dogs[i].getSize() > dogs[biggest].getSize()){
 				biggest = i;
 			}
 		}
 		
-		System.out.print(dogs[biggest].name + " is the largest.");
+		System.out.print(dogs[biggest].getName() + " is the largest.");
 	}
 }
