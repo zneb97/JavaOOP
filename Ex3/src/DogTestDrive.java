@@ -1,3 +1,10 @@
+/*
+ * Test class for the various animal related classes involved
+ * in Olin's Java OOP IS class.
+ * 
+ * @author Ben Ziemann
+ */
+
 class DogTestDrive{
 	public static void main (String[] args){
 		Dog[] dogs = new Dog[3];
@@ -19,6 +26,17 @@ class DogTestDrive{
 		d3.setName("Troll");
 		d3.setSize(90);
 		dogs[2]=d3;
+		
+		int[] sizes = new int[5];
+		DogPack pack1 = new DogPack();
+		pack1.makeArray(sizes.length);
+		
+		for(int q=0; q<sizes.length; q++){
+			d3.setSize(2*q + 20);
+			pack1.addDog(q, d3);
+		}
+		
+		System.out.println(pack1.biggestDog().getName());
 		
 		int biggest = 0;
 		for(int i = 0; i < dogs.length; i++){
