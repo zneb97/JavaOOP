@@ -64,6 +64,10 @@ class DogTestDrive{
 		
 		//Ex5
 		System.out.println(c1.getName() + " is bigger than " + d2.getName() + ": " + c1.isBigger(d2));
-
+		
+		System.out.println(d1.fetch("go get it"));
+		
+		Fetcher F = new Dog();
+		System.out.println(F.fetch("interface test"));
 	}
 }
