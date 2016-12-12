@@ -1,4 +1,4 @@
-class Animal{
+abstract class Animal{
 	private int size;
 	private String breed;
 	private String name;
