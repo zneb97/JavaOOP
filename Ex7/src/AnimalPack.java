@@ -7,7 +7,10 @@ public class AnimalPack {
 	 * @author Ben Ziemann
 	 */
 		private ArrayList<Animal> animals;
-			
+		
+		public AnimalPack(){
+			animals = new ArrayList<Animal>();
+		}
 		
 		/*
 		 * Create the animalpack arraylist
@@ -44,6 +47,28 @@ public class AnimalPack {
 			for(int i = 0; i < animals.size(); i++){
 				animals.get(i).makeNoise();
 			}
+		}
+		
+		public double geoMean(){
+			double multiple = 1;
+			
+			for(int i = 0; i < animals.size(); i++){
+				multiple = multiple*animals.get(i).getSize();
+			}
+			
+			double geo = Math.pow(multiple, animals.size());
+			return geo;
+		}
+		
+		public static double geoMean2(AnimalPack pack){
+			double multiple = 1;
+			
+			for(int i = 0; i < pack.animals.size(); i++){
+				multiple = multiple*pack.animals.get(i).getSize();
+			}
+			
+			double geo = Math.pow(multiple, pack.animals.size());
+			return geo;
 		}
 
 }

@@ -10,9 +10,6 @@ class DogTestDrive{
 		Dog[] dogs = new Dog[3];
 		
 		Dog d1 = new Dog(100, "Newfie", "Tonka");
-		d1.setBreed("Newfie");
-		d1.setName("Tonka");
-		d1.setSize(100);
 		dogs[0]=d1;
 
 		Dog d2 = new Dog(80, "Husky", "Tank");

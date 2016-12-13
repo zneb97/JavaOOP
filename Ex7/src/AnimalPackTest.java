@@ -31,6 +31,9 @@ public class AnimalPackTest {
 		
 		System.out.println(pack1.biggestAnimal().getName());
 		pack1.makeNoise();
+		System.out.println(pack1.geoMean());
+		System.out.println(AnimalPack.geoMean2(pack1));
+		//Attempting to get instance variables of a static class results in non visible error
 		
 	}
 }
